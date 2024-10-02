@@ -18,8 +18,7 @@ app.get('/usuarios', (req, res) =>{
 //ROTA QUE ESTA CRIANDO OS USUÁRIOS (POST)
 
 app.post('/usuarios', async (req, res) => {
-    users.push(req.boby)
-   
+       
     await prisma.user.create({
         
         data:{
